@@ -4,3 +4,6 @@ body{
 .deliveryAmount{
     display: none;
 }
+.pizzaDelivery{
+    display:none;
+}
