@@ -40,7 +40,7 @@
                  
                   <!-- toppings -->
                     <div class="form-group col-md-4">
-                    <label for="toppings">Choose the Size</label>
+                    <label for="toppings">Choose the type of toppings</label>
                     <select class="pizzaToppings form-control">
                      <option value="Pineapple">Pineapple</option>
                       <option value="cheese">Extra cheese</option>
@@ -51,21 +51,20 @@
 
                   <!-- quantity -->
                   <div class="form-group col-md-4">
-                    <label for="inputState">Choose how many</label>
-                   <input type="number" class="form-control">
+                    <label for="quantity">Choose the quantity of pizza</label>
+                   <input type="number" name="quantity" class="pizzaQuantity form-control">
                   </div>
 
                   <!-- delivery option -->
                   <div class="form-group col-md-4">
                     <label for="inputState">Do you want delivery?</label>
-                    <select id="inputState" class="form-control">
-                        <option>Yes</option>
-                         <option>No</option>
-         
-                       </select>
+                    <select class="pizzaDelivery form-control">
+                        <option value="Yes">Yes</option>
+                         <option value="No">No</option>
+                        </select>
                        <h5>Delivery fee is Kes. 200</h5>
                   </div>
-                  <input type="submit" value="Place order" class="btn btn-info btn-lg">
+                  <input type="submit" value="Place order" class="placeOrder btn btn-info btn-lg">
             </div>
         </form>
     
