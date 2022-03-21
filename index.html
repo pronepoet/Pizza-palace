@@ -20,7 +20,7 @@
         <form>
             <div class="form-row">
                 <!-- size of pizza -->
-                <div class="form-group col-md-4">
+                <div class="form-group col-lg-4 col-md-4">
                     <label for="size">Choose the Size</label>
                     <select name="size" class="pizzaSize form-control">
                      <option value="Small">Small</option>
@@ -29,7 +29,7 @@
                     </select>
                   </div>
                   <!-- crust -->
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-lg-4 col-md-4">
                     <label for="crust">Choose type of crust</label>
                     <select name="crust" class="pizzaCrust form-control">
                      <option value="Neapolitan">Neapolitan Pizza Crust</option>
@@ -39,7 +39,7 @@
                   </div>
                  
                   <!-- toppings -->
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-lg-4 col-md-4">
                     <label for="toppings">Choose the type of toppings</label>
                     <select class="pizzaToppings form-control">
                      <option value="Pineapple">Pineapple</option>
@@ -50,7 +50,7 @@
                   </div>
 
                   <!-- quantity -->
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-lg-4 col-md-4">
                     <label for="quantity">Choose the quantity of pizza</label>
                    <input type="number" name="quantity" class="pizzaQuantity form-control">
                   </div>
@@ -68,7 +68,17 @@
         <br>
             <h5 class="deliveryAmount">Delivery fee is Kes. 200</h5>
             <br>
-     
+     <form> 
+        <div class="form-row">
+            <div class="form-group col-lg-4 col-md-4">
+                <label class="form-check-label" for="gridCheck">Please provide destination for delivery.</label>
+                <input type="text" class="form-control">
+            </div>
+       
+        </div>
+       
+        
+     </form>
     <button class="placeOrder btn btn-info btn-lg">Place Order</button> 
       </div>
       <footer>
