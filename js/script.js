@@ -51,6 +51,7 @@ $(document).ready(() => {
             $(".placeOrder").hide();
             $(".deliveryAmount").hide();
             $(".pizzaDeliveryInput").hide();
+$(".checkout").hide();
 
         })
     })
