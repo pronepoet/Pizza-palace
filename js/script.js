@@ -14,6 +14,7 @@ $(document).ready(() => {
 
 
     $(".placeOrder").click(function () {
+        $(".placeOrder").hide();
         $(".final_checkout").show();
         var size = $(".pizzaSize option:selected").val();
         var crust = $(".pizzaCrust option:selected").val();
@@ -30,28 +31,36 @@ $(document).ready(() => {
         var pizzaOrdered = new Pizza(size, crust, topping, total);
         $(".orderDetails").show();
         $("ul.checkout").append("<li>" + pizzaOrdered.order() + "</li>");
-        grandTotal = grandTotal + total
-        $(".grand h3").text(grandTotal + 200);
-
+        // grandTotal = grandTotal + total
+        // $(".grand h3").text(grandTotal + 200);
+        console.log(grandTotal)
         //clicks yes button for delivery option
         $(".deliveryYes").click(() => {
             $(".deliveryAmount").show();
             $(".pizzaDeliveryInput").show();
             $(".deliveryQuestion").show();
-            $(".grand h3").html(grandTotal + 200);
+            // $(".grand h3").html(grandTotal + 200);
+            grandTotal = grandTotal + 200;
+            console.log(grandTotal)
+            $(".grand_total").show()
+            $("ul.grand_total_v").append("<li> Your total amount to be paid is:" + grandTotal + "</li>")
 
         })
         //clicks no for delivery
         $(".deliveryNo").click(() => {
             $(".deliveryAmount").hide();
             $(".pizzaDeliveryInput").hide();
+            $(".deliveryQuestion").hide();
         });
         // clicks checkout button
         $(".final_checkout").click(function () {
             $(".placeOrder").hide();
             $(".deliveryAmount").hide();
             $(".pizzaDeliveryInput").hide();
-$(".checkout").hide();
+            $(".checkout").hide();
+            $(".grand_total").hide()
+            $(".deliveryQuestion").hide();
+            
 
         })
     })

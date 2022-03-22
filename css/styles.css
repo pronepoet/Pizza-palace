@@ -21,3 +21,15 @@ body {
 .deliveryQuestion {
     display: none;
 }
+
+.grand_total {
+    display: none;
+}
+
+.grand_total_v {
+    list-style: none;
+}
+
+.checkout {
+    list-style: none;
+}
