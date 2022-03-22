@@ -23,7 +23,7 @@
     <form>
       <div class="form-row">
         <!-- size of pizza -->
-        <div class="form-group col-lg-4 col-md-4">
+        <div class="form-group col-lg-6 col-md-4">
           <label for="size">Choose the Size</label>
           <select name="size" class="pizzaSize form-control">
             <option value="500">Small</option>
@@ -32,7 +32,7 @@
           </select>
         </div>
         <!-- crust -->
-        <div class="form-group col-lg-4 col-md-4">
+        <div class="form-group col-lg-6 col-md-4">
           <label for="crust">Choose type of crust</label>
           <select name="crust" class="pizzaCrust form-control">
             <option value="100">Neapolitan Pizza Crust</option>
@@ -42,7 +42,7 @@
         </div>
 
         <!-- toppings -->
-        <div class="form-group col-lg-4 col-md-4">
+        <div class="form-group col-lg-6 col-md-4">
           <label for="toppings">Choose the type of toppings</label>
           <select class="pizzaToppings form-control">
             <option value="100">Pineapple</option>
@@ -53,9 +53,9 @@
         </div>
 
         <!-- quantity -->
-        <div class="form-group col-lg-4 col-md-4">
+        <div class="form-group col-lg-6 col-md-4">
           <label for="quantity">Choose the quantity of pizza</label>
-          <input type="number" name="quantity" class="pizzaQuantity form-control">
+          <input type="number" name="quantity" class="pizzaQuantity form-control" required>
         </div>
 
         <!-- delivery option -->
@@ -67,7 +67,7 @@
           <ul class="checkout">
 
           </ul>
-          <h3 class="grand"></h3>
+     
         </div>
 
 
@@ -80,17 +80,22 @@
         <br>
         <h5 class="deliveryAmount">Delivery fee is Kes. 200</h5>
         <br>
-        <div class="form-group col-lg-4 col-md-4">
+        <div class="form-group col-lg-6 col-md-4">
           <label class="deliveryQuestion form-check-label" for="delivery_destination">Please provide destination for
             delivery.</label>
-          <input type="text" name="delivery_destination" class="pizzaDeliveryInput form-control">
+          <input type="text" name="delivery_destination" class="pizzaDeliveryInput form-control" placeholder="Destination address" required>
 <!-- this is where you get info for the grand total to be paid -->
-          <div class="grand_total">
-            <ul class="grand_total_v"></ul>
-          </div>
+      </div>
     </form>
 
+    <div class="grand_total">
+      <ul class="grand_total_v"></ul>
+    </div>
+    <div class="deliveryMessage">
+      <ul class="deliveryInfo">
 
+      </ul>
+    </div>
 
   </div>
 
@@ -98,7 +103,7 @@
   <button class="final_checkout btn btn-success" type="button">Checkout</button>
 
   <footer>
-    #contact
+   
   </footer>
   <!-- Optional JavaScript; choose one of the two! -->
 

@@ -27,13 +27,12 @@ $(document).ready(() => {
         var total = (parseInt(size) + parseInt(crust) + parseInt(topping)) * parseInt(quantity);
         grandTotal = grandTotal + total
 
-        console.log(`your pizza will be delivered ${destination} and costs ${total} shillings`);
+        // console.log(`your pizza will be delivered ${destination} and costs ${total} shillings`);
         var pizzaOrdered = new Pizza(size, crust, topping, total);
         $(".orderDetails").show();
         $("ul.checkout").append("<li>" + pizzaOrdered.order() + "</li>");
-        // grandTotal = grandTotal + total
-        // $(".grand h3").text(grandTotal + 200);
-        console.log(grandTotal)
+
+        // console.log(grandTotal)
         //clicks yes button for delivery option
         $(".deliveryYes").click(() => {
             $(".deliveryAmount").show();
@@ -43,7 +42,7 @@ $(document).ready(() => {
             grandTotal = grandTotal + 200;
             console.log(grandTotal)
             $(".grand_total").show()
-            $("ul.grand_total_v").append("<li> Your total amount to be paid is:" + grandTotal + "</li>")
+            $("ul.grand_total_v").append("<li> Your total amount to be paid is KES: " + grandTotal + "</li>")
 
         })
         //clicks no for delivery
@@ -53,15 +52,18 @@ $(document).ready(() => {
             $(".deliveryQuestion").hide();
         });
         // clicks checkout button
-        $(".final_checkout").click(function () {
-            $(".placeOrder").hide();
+        $(".final_checkout").last().click(function () {
+
             $(".deliveryAmount").hide();
             $(".pizzaDeliveryInput").hide();
             $(".checkout").hide();
-            $(".grand_total").hide()
+            // $(".grand_total").hide()
             $(".deliveryQuestion").hide();
-            
-
+            //removes the items kwa div
+            $("ul.grand_total_v li").eq(0).remove();
+            $(".deliveryMessage").show();
+            $(".deliveryInfo").append("<li> Your Pizza will be delivered shortly. Enjoy!</li>");
+           
         })
     })
 });

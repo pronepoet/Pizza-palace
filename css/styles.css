@@ -33,3 +33,9 @@ body {
 .checkout {
     list-style: none;
 }
+.deliveryMessage{
+    display: none;
+}
+.deliveryInfo{
+    list-style:none;
+}
