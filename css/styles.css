@@ -1,18 +1,23 @@
-body{
+body {
     text-align: center;
 }
-.deliveryAmount{
+
+.deliveryAmount {
     display: none;
 }
-.pizzaDeliveryInput{
-    display:none;
+
+.pizzaDeliveryInput {
+    display: none;
 }
-.orderDetails{
-    display:none;
+
+.orderDetails {
+    display: none;
 }
-.final_checkout{
-    display:none;
+
+.final_checkout {
+    display: none;
 }
-.deliveryQuestion{
-    display:none;
+
+.deliveryQuestion {
+    display: none;
 }
