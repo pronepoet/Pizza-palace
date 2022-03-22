@@ -1,4 +1,5 @@
 # Pizza-place
+This application enables pizza enthusiasts to order their pizza at the comfort of their machines and have them delivered to you or personally pick it up when ready.
 ![]()
 
 ## Technologies Used
