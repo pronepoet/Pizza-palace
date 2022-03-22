@@ -23,18 +23,18 @@
                 <div class="form-group col-lg-4 col-md-4">
                     <label for="size">Choose the Size</label>
                     <select name="size" class="pizzaSize form-control">
-                     <option value="Small">Small</option>
-                      <option value="Medium">Medium</option>
-                      <option value="Large">Large</option>
+                     <option value="500">Small</option>
+                      <option value="650">Medium</option>
+                      <option value="750">Large</option>
                     </select>
                   </div>
                   <!-- crust -->
                   <div class="form-group col-lg-4 col-md-4">
                     <label for="crust">Choose type of crust</label>
                     <select name="crust" class="pizzaCrust form-control">
-                     <option value="Neapolitan">Neapolitan Pizza Crust</option>
-                      <option value="New_York">New York Style Pizza Pie </option>
-                      <option value="Traditional">Traditional Pan Pizza</option>
+                     <option value="100">Neapolitan Pizza Crust</option>
+                      <option value="150">New York Style Pizza Pie </option>
+                      <option value="100">Traditional Pan Pizza</option>
                     </select>
                   </div>
                  
@@ -42,10 +42,10 @@
                     <div class="form-group col-lg-4 col-md-4">
                     <label for="toppings">Choose the type of toppings</label>
                     <select class="pizzaToppings form-control">
-                     <option value="Pineapple">Pineapple</option>
-                      <option value="cheese">Extra cheese</option>
-                      <option value="Mushrooom">Mushroom</option>
-                      <option value="Pepporoni">Pepporoni</option>
+                     <option value="100">Pineapple</option>
+                      <option value="150">Extra cheese</option>
+                      <option value="150">Mushroom</option>
+                      <option value="100">Pepporoni</option>
                     </select>
                   </div>
 
@@ -56,34 +56,30 @@
                   </div>
 
                   <!-- delivery option -->
-                 
-                  
+                  <label for="inputState">Do you want delivery?</label>
+                <br>
+                <button class="deliveryYes btn btn-success" type="button">Yes</button>
+                <button class="deliveryNo btn btn-danger" type="button">No</button>
+                <br>
+                <br>
+                    <h5 class="deliveryAmount">Delivery fee is Kes. 200</h5>
+                    <br>  
+                    <div class="form-group col-lg-4 col-md-4">
+                      <label class="form-check-label" for="delivery_destination">Please provide destination for delivery.</label>
+                      <input type="text" name="delivery_destination" class="pizzaDeliveryInput form-control">
+                      <input type="button" value="Place Order" class="placeOrder btn btn-info btn-lg"> 
+                    </div>
+                
+                 </div>
+                </form>
+               
+    
+
             </div>
-        </form>
-        <label for="inputState">Do you want delivery?</label>
-        <br>
-        <button class="deliveryYes btn btn-success">Yes</button>
-        <button class="deliveryNo btn btn-danger">No</button>
-        <br>
-        <br>
-            <h5 class="deliveryAmount">Delivery fee is Kes. 200</h5>
-            <br>
-     <form class="pizzaDelivery"> 
-        <div class="form-row">
-            <div class="form-group col-lg-4 col-md-4">
-                <label class="form-check-label" for="delivery_destination">Please provide destination for delivery.</label>
-                <input type="text" name="delivery_destination" class="pizzaDelivery form-control">
-            </div>
-       
-        </div>
-       
-        
-     </form>
-    <button class="placeOrder btn btn-info btn-lg">Place Order</button> 
-      </div>
+     
 
       <div class="order-details">
-          
+
       </div>
       <footer>
           #contact
