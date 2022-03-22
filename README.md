@@ -6,7 +6,7 @@ This application enables pizza enthusiasts to order their pizza at the comfort o
 - HTML & CSS (Bootstrap)
 - Javascript & JQUERY
 ##### Requirements
-Internet connection
+Internet connection to display the bootstrap styling
 ##### Setup Instructions and Installation
 N/A
 ## Known Bugs
