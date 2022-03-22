@@ -1,6 +1,13 @@
 body {
     text-align: center;
-    background-image: linear-gradient(rgb(206, 230, 243), rgb(224, 224, 134),rgb(235, 170, 219));
+    background-image: linear-gradient(rgb(206, 230, 243), rgb(224, 224, 134), rgb(235, 170, 219));
+    font-family: 'Comic Neue', cursive;
+    font-weight: bolder;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .deliveryAmount {
@@ -43,10 +50,14 @@ body {
     list-style: none;
 }
 
-.deliveryButtons{
-   display:none;
+.deliveryButtons {
+    display: none;
 }
 
-.giphy-embed{
+.giphy-embed {
     display: none;
+}
+
+footer {
+    font-family: 'Red Hat Mono', monospace;
 }
