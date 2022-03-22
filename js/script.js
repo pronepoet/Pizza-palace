@@ -63,7 +63,7 @@ $(document).ready(() => {
             $("ul.grand_total_v li").eq(0).remove();
             $(".deliveryMessage").show();
             $(".deliveryInfo").append("<li> Your Pizza will be delivered shortly. Enjoy!</li>");
-           
+
         })
     })
 });
