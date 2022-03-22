@@ -5,7 +5,9 @@ body {
     font-weight: bolder;
 
 }
-
+.pizzaPalace{
+    color:rgb(141, 67, 135);
+}
 p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -60,4 +62,7 @@ p {
 
 footer {
     font-family: 'Red Hat Mono', monospace;
+}
+.pizzaImage{
+    float:right;
 }
