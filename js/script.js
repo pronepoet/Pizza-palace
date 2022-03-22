@@ -1,12 +1,12 @@
-//business logic
-// var size = document.getElementBiId("pizzaSize").value;
-// var crust = document.querySelector(".pizzaCrust").value;
-// var topping = document.querySelector(".pizzaToppings").value;
-// var quantity = document.querySelector(".pizzaQuantity").value;
-//let destination = document.querySelector(".pizzaDeliveryInput").value;
-// var order = document.querySlelector(".placeOrder");
-
-// user interface logic
+function Pizza (sizeP,crustP,toppingP,totalP){
+    this.size = sizeP;
+    this.topping = toppingP;
+    this.crust = crustP;
+    this.total = totalP;
+}
+Pizza.prototype.order = function(){
+    return this.size + " " + this.topping + " " + this.crust + " " + this.total;
+}
 $(document).ready(()=>{
     //sees whether a customer wants delivery 
     $(".deliveryYes").click(()=>{
@@ -31,7 +31,10 @@ $(".placeOrder").click(function(){
      
         var total = (parseInt(size) + parseInt(crust) + parseInt(topping)) * parseInt(quantity);
         console.log(`your pizza will be delivered ${destination} and costs ${total} shillings`);
-        
+        var pizzaOrdered = new Pizza (size,crust,topping,total);
+        $(".orderDetails").toggle();
+        $("ul.checkout").append("<li>" +pizzaOrdered.order()+ "</li>");
+
         
 })
 });
