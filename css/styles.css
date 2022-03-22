@@ -4,9 +4,15 @@ body{
 .deliveryAmount{
     display: none;
 }
-.pizzaDelivery{
+.pizzaDeliveryInput{
     display:none;
 }
 .orderDetails{
+    display:none;
+}
+.final_checkout{
+    display:none;
+}
+.deliveryQuestion{
     display:none;
 }
