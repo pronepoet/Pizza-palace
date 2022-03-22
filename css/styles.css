@@ -64,8 +64,24 @@ p {
 
 footer {
     font-family: 'Red Hat Mono', monospace;
+    margin-top: 100px;
+    font-size: smaller;
+    color: rgb(112, 81, 111);
 }
 
 .pizzaImage {
     float: right;
+
+}
+
+img {
+    height: 300px;
+}
+
+.grand_total_v li {
+    font-size: 30px;
+}
+
+.deliveryInfo li {
+    font-size: 30px;
 }
