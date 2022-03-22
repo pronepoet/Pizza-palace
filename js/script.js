@@ -15,6 +15,7 @@ $(document).ready(() => {
 
     $(".placeOrder").click(function () {
         $(".placeOrder").hide();
+        $(".deliveryButtons").show();
         $(".final_checkout").show();
         var size = $(".pizzaSize option:selected").val();
         var crust = $(".pizzaCrust option:selected").val();
@@ -38,21 +39,23 @@ $(document).ready(() => {
             $(".deliveryAmount").show();
             $(".pizzaDeliveryInput").show();
             $(".deliveryQuestion").show();
+
             // $(".grand h3").html(grandTotal + 200);
             grandTotal = grandTotal + 200;
             console.log(grandTotal)
             $(".grand_total").show()
             $("ul.grand_total_v").append("<li> Your total amount to be paid is KES: " + grandTotal + "</li>")
-
+            $(".deliveryButtons").hide();
         })
         //clicks no for delivery
         $(".deliveryNo").click(() => {
             $(".deliveryAmount").hide();
             $(".pizzaDeliveryInput").hide();
             $(".deliveryQuestion").hide();
+            $(".deliveryButtons").hide();
         });
         // clicks checkout button
-        $(".final_checkout").last().click(function () {
+        $(".final_checkout").click(function () {
 
             $(".deliveryAmount").hide();
             $(".pizzaDeliveryInput").hide();
@@ -63,7 +66,8 @@ $(document).ready(() => {
             $("ul.grand_total_v li").eq(0).remove();
             $(".deliveryMessage").show();
             $(".deliveryInfo").append("<li> Your Pizza will be delivered shortly. Enjoy!</li>");
-
+            $(".final_checkout").hide();
+            $(".giphy-embed").show()
         })
     })
 });
