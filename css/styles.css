@@ -69,14 +69,14 @@ footer {
     color: rgb(112, 81, 111);
 }
 
-.pizzaImage {
+/* .pizzaImage {
     float: right;
 
-}
-
+} */
+/* 
 img {
     height: 300px;
-}
+} */
 
 .grand_total_v li {
     font-size: 30px;
@@ -84,4 +84,36 @@ img {
 
 .deliveryInfo li {
     font-size: 30px;
+}
+.form{
+    margin:auto;
+    width:50%;
+}
+.pizza{
+    height:20%;
+}
+
+.carousel .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+.carousel p {
+      
+}
+.placeOrder,
+.deliveryYes,
+.deliveryNo,
+.final_checkout{
+    background-color: pink;
+}
+
+.hungry{
+    padding-top:70px;
+}
+.make_order{
+    padding-bottom: 20px;
+}
+.intro{
+    line-height: 3rem;
+    padding-bottom:50px;
 }
