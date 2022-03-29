@@ -7,7 +7,7 @@ body {
     padding:0;
 
 }
-.container{
+.wrapper{
     min-height:100%;
     margin-bottom: -50px;
    
@@ -81,9 +81,7 @@ footer,
     color: rgb(112, 81, 111);
    width:100%;
 }
-footer a {
-  
-}
+
 .right{
     float: right;
 }
