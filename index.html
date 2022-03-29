@@ -21,149 +21,180 @@
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Montserrat&family=Red+Hat+Mono&display=swap"
     rel="stylesheet">
   <title>Pizza Palace</title>
+  <link rel="icon" href="images/icons8-pizza-64.png">
 </head>
 
 <body>
   <div class="container">
     <div class="intro">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/icons8-pizza-64.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            pizza-palace</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Place Order</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <h1> <strong> Hello, Welcome to <span class="pizzaPalace">Pizza Palace!</span></strong></h1>
       <h2>your one stop destination for tasty pizza</h2>
       <p> <strong>Pizza Palace</strong> offers 3, Kenyan made, delicious pizza, with all your favorite toppings and more
         coming soon. But don't just take our word for it, order below and take your taste buds on a flavourful journey.
       </p>
     </div>
-   
-   <h3>Take a look at our masterpieces</h3>
 
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <h3>Take a look at our masterpieces</h3>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-header">
+            <h5>Neopolitan Pizza</h5>
+            <p>A fefreshing taste of pizza with ingridients such as tomatoes and chillies</p>
+          </div>
+          <img src="images/traditional.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-header">
+            <h5>New York Style Pizza</h5>
+            <p>This pizza is made the American way with wheat imported straight from Silicon Valley!.</p>
+          </div>
+          <img src="images/pizza-2425450_640.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-header">
+            <h5>Traditional Pan Pizza</h5>
+            <p>Pizza made the traditional way, heated on a pan.</p>
+          </div>
+          <img src="images/traditional1.jpg" class="d-block w-100" alt="...">
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="carousel-header">
-          <h5>Neopolitan Pizza</h5>
-          <p>A fefreshing taste of pizza with ingridients such as tomatoes and chillies</p>
+
+
+
+
+    <h2 class="hungry">Feeling hungry yet?</h2>
+    <h3 class="make_order">Make your order below</h3>
+
+
+    <form>
+      <div class="form">
+        <!-- size of pizza -->
+        <div class="form-group">
+          <label for="size">Choose the Size</label>
+          <select name="size" class="pizzaSize form-control">
+            <option value="500">Small</option>
+            <option value="650">Medium</option>
+            <option value="750">Large</option>
+          </select>
         </div>
-        <img src="images/traditional.jpg" class="d-block w-100" alt="...">
-     
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-header">
-          <h5>New York Style Pizza</h5>
-          <p>This pizza is made the American way with wheat imported straight from Silicon Valley!.</p>
+        <!-- crust -->
+        <div class="form-group">
+          <label for="crust">Choose type of crust</label>
+          <select name="crust" class="pizzaCrust form-control">
+            <option value="100">Neapolitan Pizza Crust</option>
+            <option value="150">New York Style Pizza Pie </option>
+            <option value="100">Traditional Pan Pizza</option>
+          </select>
         </div>
-        <img src="images/pizza-2425450_640.jpg" class="d-block w-100" alt="...">
-       
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-header">
-          <h5>Traditional Pan Pizza</h5>
-          <p>Pizza made the traditional way, heated on a pan.</p>
+
+        <!-- toppings -->
+        <div class="form-group">
+          <label for="toppings">Choose the type of toppings</label>
+          <select class="pizzaToppings form-control">
+            <option value="100">Pineapple</option>
+            <option value="150">Extra cheese</option>
+            <option value="150">Mushroom</option>
+            <option value="100">Pepporoni</option>
+          </select>
         </div>
-        <img src="images/traditional1.jpg" class="d-block w-100" alt="...">
-    
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  
+        <!-- quantity -->
+        <div class="form-group">
+          <label for="quantity">Choose the quantity of pizza (Please only enter a number value)</label>
+          <input type="number" name="quantity" class="pizzaQuantity form-control" required>
+        </div>
 
-    
-<h2 class="hungry">Feeling hungry yet?</h2>
-<h3 class="make_order">Make your order below</h3>
+        <br> <!-- delivery option -->
 
-     
-        <form>
-          <div class="form">
-            <!-- size of pizza -->
-            <div class="form-group">
-              <label for="size">Choose the Size</label>
-              <select name="size" class="pizzaSize form-control">
-                <option value="500">Small</option>
-                <option value="650">Medium</option>
-                <option value="750">Large</option>
-              </select>
-            </div>
-            <!-- crust -->
-            <div class="form-group">
-              <label for="crust">Choose type of crust</label>
-              <select name="crust" class="pizzaCrust form-control">
-                <option value="100">Neapolitan Pizza Crust</option>
-                <option value="150">New York Style Pizza Pie </option>
-                <option value="100">Traditional Pan Pizza</option>
-              </select>
-            </div>
-    
-            <!-- toppings -->
-            <div class="form-group">
-              <label for="toppings">Choose the type of toppings</label>
-              <select class="pizzaToppings form-control">
-                <option value="100">Pineapple</option>
-                <option value="150">Extra cheese</option>
-                <option value="150">Mushroom</option>
-                <option value="100">Pepporoni</option>
-              </select>
-            </div>
-    
-            <!-- quantity -->
-            <div class="form-group">
-              <label for="quantity">Choose the quantity of pizza (Please only enter a number value)</label>
-              <input type="number" name="quantity" class="pizzaQuantity form-control" required>
-            </div>
-    
-            <br> <!-- delivery option -->
-    
-            <input type="button" value="Place Order" class="placeOrder btn btn-success btn-lg">
-            <br>
-            <!-- where the details for order are displayed -->
-            <div class="orderDetails">
-              <ul class="checkout">
-    
-              </ul>
-    
-            </div>
-    
-            <br>
-            <!-- the delivery question part after  -->
-    
-    
-            <div class="deliveryButtons">
-              <label for="inputState">Do you want delivery?</label>
-              <br>
-              <br>
-              <button class="deliveryYes btn btn-success" type="button">Yes</button>
-              <button class="deliveryNo btn btn-danger" type="button">No</button>
-            </div>
-    
-            <br>
-            <br>
-            <h5 class="deliveryAmount">Delivery fee is Kes. 200</h5>
-            <br>
-    
-            <label class="deliveryQuestion form-check-label" for="delivery_destination">Please provide destination for
-              delivery.</label>
-            <input type="text" name="delivery_destination" class="pizzaDeliveryInput form-control"
-              placeholder="Destination address" required>
-            <!-- this is where you get info for the grand total to be paid -->
-    
-        </form>
-     
+        <input type="button" value="Place Order" class="placeOrder btn btn-success btn-lg">
+        <br>
+        <!-- where the details for order are displayed -->
+        <div class="orderDetails">
+          <ul class="checkout">
 
-  
+          </ul>
 
-    
-    
+        </div>
+
+        <br>
+        <!-- the delivery question part after  -->
+
+
+        <div class="deliveryButtons">
+          <label for="inputState">Do you want delivery?</label>
+          <br>
+          <br>
+          <button class="deliveryYes btn btn-success" type="button">Yes</button>
+          <button class="deliveryNo btn btn-danger" type="button">No</button>
+        </div>
+
+        <br>
+        <br>
+        <h5 class="deliveryAmount">Delivery fee is Kes. 200</h5>
+        <br>
+
+        <label class="deliveryQuestion form-check-label" for="delivery_destination">Please provide destination for
+          delivery.</label>
+        <input type="text" name="delivery_destination" class="pizzaDeliveryInput form-control"
+          placeholder="Destination address" required>
+        <!-- this is where you get info for the grand total to be paid -->
+
+    </form>
+
+
+
+
+
+
 
     <div class="grand_total">
       <ul class="grand_total_v"></ul>

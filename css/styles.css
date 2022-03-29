@@ -85,35 +85,39 @@ img {
 .deliveryInfo li {
     font-size: 30px;
 }
-.form{
-    margin:auto;
-    width:50%;
+
+.form {
+    margin: auto;
+    width: 50%;
 }
-.pizza{
-    height:20%;
+
+.pizza {
+    height: 20%;
 }
 
 .carousel .carousel-item img {
     height: 500px;
     object-fit: cover;
 }
-.carousel p {
-      
-}
+
+.carousel p {}
+
 .placeOrder,
 .deliveryYes,
 .deliveryNo,
-.final_checkout{
+.final_checkout {
     background-color: pink;
 }
 
-.hungry{
-    padding-top:70px;
+.hungry {
+    padding-top: 70px;
 }
-.make_order{
+
+.make_order {
     padding-bottom: 20px;
 }
-.intro{
+
+.intro {
     line-height: 3rem;
-    padding-bottom:50px;
+    padding-bottom: 50px;
 }
