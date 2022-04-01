@@ -46,7 +46,8 @@ p {
 .giphy-embed,
 .pizzaTable,
 .customerName,
-.phoneNumber {
+.phoneNumber,
+.carousel {
     display: none;
 }
 

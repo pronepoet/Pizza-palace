@@ -24,7 +24,9 @@ Pizza.prototype.order = function () {
 $(document).ready(() => {
     //sees whether a customer wants delivery 
 
-
+$(".proc").click(()=>{
+    $(".carousel").slideToggle();
+})
 
 
     $(".placeOrder").click(function () {
