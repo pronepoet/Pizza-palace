@@ -25,6 +25,12 @@ body {
     color: rgb(141, 67, 135);
 }
 
+form {
+    display: inline-block;
+}
+
+
+
 p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -37,7 +43,10 @@ p {
 .grand_total,
 .deliveryMessage,
 .deliveryButtons,
-.giphy-embed {
+.giphy-embed,
+.pizzaTable,
+.customerName,
+.phoneNumber {
     display: none;
 }
 
@@ -76,10 +85,7 @@ footer,
     font-size: 30px;
 }
 
-.form {
-    /* margin: auto;
-    width: 50%; */
-}
+
 
 .pizza {
     height: 20%;

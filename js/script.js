@@ -35,7 +35,10 @@ $(document).ready(() => {
         var crust = $(".pizzaCrust option:selected").val();
         var topping = $(".pizzaToppings option:selected").val();
         var quantity = $(".pizzaQuantity").val();
-        let destination = $(".pizzaDeliveryInput").val();
+        let destination = $(".pizzaDeliveryInput");
+        let nameOfCustomer = $(".customerName");
+
+        // let phoneNo = $(".phoneNumber").val();
         //var order = $(".placeOrder").val();
         var grandTotal = 0;
 
@@ -44,12 +47,12 @@ $(document).ready(() => {
 
         // console.log(`your pizza will be delivered ${destination} and costs ${total} shillings`);
         var pizzaOrdered = new Pizza(size, crust, topping, total);
-        $(".orderDetails").show();
-        $("ul.checkout").append("<li>" + pizzaOrdered.order() + "</li>");
+
 
         // console.log(grandTotal)
         //clicks yes button for delivery option
         $(".deliveryYes").click(() => {
+            let id = 1;
             $(".deliveryAmount").show();
             $(".pizzaDeliveryInput").show();
             $(".deliveryQuestion").show();
@@ -58,15 +61,27 @@ $(document).ready(() => {
             grandTotal = grandTotal + 200;
             console.log(grandTotal)
             $(".grand_total").show()
-            $("ul.grand_total_v").append("<li> Your total amount to be paid is KES: " + grandTotal + "</li>")
+            $("ul.grand_total_v").append("<li> Please prepare KES: " + grandTotal + "</li>")
             $(".deliveryButtons").hide();
+            $(".pizzaTable").show();
+            $(".pizzaTable").append("<tbody> <td>" + id + "</td> <td>" + pizzaOrdered.order() + "</td> <td>" + grandTotal + "</td></tbody>");
         })
         //clicks no for delivery
         $(".deliveryNo").click(() => {
+            let id = 1;
+
             $(".deliveryAmount").hide();
             $(".pizzaDeliveryInput").hide();
             $(".deliveryQuestion").hide();
             $(".deliveryButtons").hide();
+            $(".final_checkout").hide();
+            $(".deliveryMessage").show();
+            $(".grand_total").show()
+            $("ul.grand_total_v").append("<li> Please prepare KES: " + grandTotal + "</li>")
+            $(".deliveryInfo").append("<li> Thank you for ordering with us! Your pizza will be ready shortly.</li>");
+            $(".giphy-embed").show();
+            $(".pizzaTable").show();
+            $(".pizzaTable").append("<tbody> <td>" + id + "</td> <td>" + pizzaOrdered.order() + "</td> <td>" + grandTotal + "</td></tbody>");
         });
         // clicks checkout button
         $(".final_checkout").click(function () {
@@ -79,17 +94,17 @@ $(document).ready(() => {
             //removes the items kwa div
             $("ul.grand_total_v li").eq(0).remove();
             $(".deliveryMessage").show();
-            $(".deliveryInfo").append("<li> Your Pizza will be delivered shortly. Enjoy!</li>");
+
+            $(".deliveryInfo").append("<li> " + nameOfCustomer.val() + " Your Pizza will be delivered to " + destination.val() + " shortly. Enjoy!</li>");
+
             $(".final_checkout").hide();
-            $(".giphy-embed").show()
-    
-        })
-        //refrehes the page
-        $(".refresh").click(()=>{
-            $("window").location.reload()
-        })
-    
-    })
+            $(".giphy-embed").show();
+
+        });
+
+
+
+    });
 
 
 });

@@ -69,7 +69,7 @@
 
       </div>
       <!--carousel-->
-      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade mb-3" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -186,143 +186,126 @@
       </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <h2 class="hungry">Feeling hungry yet?</h2>
       <h3 class="make_order">Make your order below</h3>
 
       <div class="row">
         <form class="col-lg-6">
-          <div class="form">
-            <!-- size of pizza -->
-            <div class="form-group">
-              <label for="size">Choose the Size</label>
-              <select name="size" class="pizzaSize form-control">
-                <option value="500">Small - Ksh 500</option>
-                <option value="650">Medium - Ksh 650</option>
-                <option value="750">Large - Ksh 750</option>
-              </select>
-            </div>
-            <!-- crust -->
-            <div class="form-group">
-              <label for="crust">Choose type of crust</label>
-              <select name="crust" class="pizzaCrust form-control">
-                <option value="100">Neapolitan Pizza Crust - Ksh 100</option>
-                <option value="150">New York Style Pizza Pie - Ksh 150</option>
-                <option value="100">Traditional Pan Pizza - Ksh 100</option>
-              </select>
-            </div>
+          <!-- size of pizza -->
+          <div class="form-group">
+            <label for="size">Choose the Size</label>
+            <select name="size" class="pizzaSize form-control">
+              <option value="500">Small - Ksh 500</option>
+              <option value="650">Medium - Ksh 650</option>
+              <option value="750">Large - Ksh 750</option>
+            </select>
+          </div>
+          <!-- crust -->
+          <div class="form-group">
+            <label for="crust">Choose type of crust</label>
+            <select name="crust" class="pizzaCrust form-control">
+              <option value="100">Neapolitan Pizza Crust - Ksh 100</option>
+              <option value="150">New York Style Pizza Pie - Ksh 150</option>
+              <option value="100">Traditional Pan Pizza - Ksh 100</option>
+            </select>
+          </div>
 
-            <!-- toppings -->
-            <div class="form-group">
-              <label for="toppings">Choose the type of toppings</label>
-              <select class="pizzaToppings form-control">
-                <option value="100">Pineapple - Ksh 100</option>
-                <option value="150">Extra cheese - Ksh 150</option>
-                <option value="150">Mushroom - Ksh 150</option>
-                <option value="100">Pepporoni - Ksh 100</option>
-              </select>
-            </div>
+          <!-- toppings -->
+          <div class="form-group">
+            <label for="toppings">Choose the type of toppings</label>
+            <select class="pizzaToppings form-control">
+              <option value="100">Pineapple - Ksh 100</option>
+              <option value="150">Extra cheese - Ksh 150</option>
+              <option value="150">Mushroom - Ksh 150</option>
+              <option value="100">Pepporoni - Ksh 100</option>
+            </select>
+          </div>
 
-            <!-- quantity -->
+          <!-- quantity -->
 
-            <div class="form-group">
-              <label for="quantity">Choose the quantity of pizza (Please only enter a number value)</label>
-              <input type="number" name="quantity" class="pizzaQuantity form-control" required>
-            </div>
+          <div class="form-group">
+            <label for="quantity">Choose the quantity of pizza (Please only enter a number value)</label>
+            <input type="number" name="quantity" class="pizzaQuantity form-control" required>
+          </div>
 
-            <br> <!-- delivery option -->
+          <br> <!-- delivery option -->
 
-            <input type="button" value="Place Order" class="placeOrder btn btn-success btn-lg">
-            <br>
-            <!-- where the details for order are displayed -->
-            <div class="orderDetails">
-              <ul class="checkout">
-
-              </ul>
-
-            </div>
-
-            <br>
-            <!-- the delivery question part after  -->
+          <input type="button" value="Place Order" class="placeOrder btn btn-success btn-lg">
+          <br>
+          <!-- where the details for order are displayed -->
 
 
-            <div class="deliveryButtons">
-              <label for="inputState">Do you want delivery?</label>
-              <br>
-              <br>
-              <button class="deliveryYes btn btn-success" type="button">Yes</button>
-              <button class="deliveryNo btn btn-danger" type="button">No</button>
-            </div>
+          <br>
+          <!-- the delivery question part after  -->
 
+
+          <div class="deliveryButtons">
+            <label for="inputState">Do you want delivery?</label>
             <br>
             <br>
-            <h5 class="deliveryAmount">Delivery fee is Kes. 200</h5>
-            <br>
+            <button class="deliveryYes btn btn-success" type="button">Yes</button>
+            <button class="deliveryNo btn btn-danger" type="button">No</button>
+          </div>
 
-            <label class="deliveryQuestion form-check-label" for="delivery_destination">Please provide details for
-              delivery.</label>
-            <input type="text" class="form-control" placeholder="Name..." required>
-            <input type="text" class="form-control" placeholder="Phone Number..." required>
-            <input type="text" name="delivery_destination" class="pizzaDeliveryInput form-control"
-              placeholder="Destination address" required>
+          <br>
+          <br>
+          <h5 class="deliveryAmount">Delivery fee is Kes. 200</h5>
+          <br>
 
-            <!-- this is where you get info for the grand total to be paid -->
+          <label class="deliveryQuestion form-check-label" for="delivery_destination">Please provide details for
+            delivery.</label>
+          <input type="text" class="customerName form-control" placeholder="Name..." required>
+          <input type="text" class="phoneNumber form-control" placeholder="Phone Number..." required>
+          <input type="text" name="delivery_destination" class="pizzaDeliveryInput form-control"
+            placeholder="Destination address" required>
+
+          <!-- this is where you get info for the grand total to be paid -->
 
         </form>
-        <table class="table table-hover col-lg-6">
-          <thead></thead>
-          <tbody></tbody>
-        </table>
-        <button class="final_checkout btn btn-success" type="button">Checkout</button>
+        <div class="col-lg-6">
+          <table class="pizzaTable table table-hover">
+            <thead>
+              <th>#</th>
+              <th>Pizza</th>
+              <th>Grand Total</th>
+
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <div class="grand_total">
+            <ul class="grand_total_v"></ul>
+          </div>
+        </div>
+
+        <!-- the row -->
       </div>
+      <button class="final_checkout btn btn-success" type="button">Checkout</button>
       <!-- container -->
     </div>
 
-   
+
+    <iframe src="https://giphy.com/embed/m2WQBH7DhSdgLfnTUi" width="480" height="480" frameBorder="0"
+      class="giphy-embed" allowFullScreen></iframe>
+    <p><a href="https://giphy.com/gifs/helloall-thank-you-asian-man-m2WQBH7DhSdgLfnTUi"></a></p>
+
+    <div class="deliveryMessage">
+      <ul class="deliveryInfo">
+
+      </ul>
+
+
+    </div>
 
 
 
 
-
-
-
-  <div class="grand_total">
-    <ul class="grand_total_v"></ul>
-  </div>
-  <iframe src="https://giphy.com/embed/m2WQBH7DhSdgLfnTUi" width="480" height="480" frameBorder="0" class="giphy-embed"
-    allowFullScreen></iframe>
-  <p><a href="https://giphy.com/gifs/helloall-thank-you-asian-man-m2WQBH7DhSdgLfnTUi"></a></p>
-
-  <div class="deliveryMessage">
-    <ul class="deliveryInfo">
-
-    </ul>
-    <button class="refresh btn btn-secondary"> Order Again</button>
-
-  </div>
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-  <script src="https://kit.fontawesome.com/3ec3d248e9.js" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
- <!-- wrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/3ec3d248e9.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <!-- wrapper -->
   </div>
 
 
