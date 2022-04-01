@@ -77,8 +77,8 @@ footer,
 }
 
 .form {
-    margin: auto;
-    width: 50%;
+    /* margin: auto;
+    width: 50%; */
 }
 
 .pizza {
@@ -86,7 +86,7 @@ footer,
 }
 
 .carousel .carousel-item img {
-    height: 500px;
+    height: 600px;
     object-fit: cover;
 }
 
