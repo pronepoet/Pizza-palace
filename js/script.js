@@ -1,13 +1,13 @@
-var i = 0; text;
-text = 'Hi there traveller'
-function typing() {
-    if(i<text.length){
-        document.getElementById("text").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typing,50);
-    }
-}
-typing();
+// var i = 0; text;
+// text = 'Please come again'
+// function typing() {
+//     if(i<text.length){
+//         document.getElementById("text").innerHTML += text.charAt(i);
+//         i++;
+//         setTimeout(typing,50);
+//     }
+// }
+// typing();
 
 
 
@@ -82,6 +82,14 @@ $(document).ready(() => {
             $(".deliveryInfo").append("<li> Your Pizza will be delivered shortly. Enjoy!</li>");
             $(".final_checkout").hide();
             $(".giphy-embed").show()
+    
         })
+        //refrehes the page
+        $(".refresh").click(()=>{
+            $("window").location.reload()
+        })
+    
     })
+
+
 });
