@@ -63,7 +63,7 @@ $(document).ready(() => {
             $(".grand_total").show()
             $("ul.grand_total_v").append("<li> Please prepare KES: " + grandTotal + "</li>")
             $(".deliveryButtons").hide();
-            $(".pizzaTable").show();
+            $(".pizzaTable").slideToggle();
             $(".pizzaTable").append("<tbody> <td>" + id + "</td> <td>" + pizzaOrdered.order() + "</td> <td>" + grandTotal + "</td></tbody>");
         })
         //clicks no for delivery
@@ -80,7 +80,7 @@ $(document).ready(() => {
             $("ul.grand_total_v").append("<li> Please prepare KES: " + grandTotal + "</li>")
             $(".deliveryInfo").append("<li> Thank you for ordering with us! Your pizza will be ready shortly.</li>");
             $(".giphy-embed").show();
-            $(".pizzaTable").show();
+            $(".pizzaTable").slideToggle();
             $(".pizzaTable").append("<tbody> <td>" + id + "</td> <td>" + pizzaOrdered.order() + "</td> <td>" + grandTotal + "</td></tbody>");
         });
         // clicks checkout button
