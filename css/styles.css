@@ -12,6 +12,11 @@ body {
     margin-bottom: -50px;
    
 }
+/*this is the pizzas catalogue*/
+.pizzaRow{
+    display:flex;
+    justify-content: space-between;
+}
 
 
 .pizzaPalace {
